@@ -19,12 +19,10 @@ public class reverse {
 
         while (current != null) {
 
-            Node next = current.next;
-
-            current.next = prev;
-
-            prev = current;
-            current = next;
+           Node next = current.next;
+           current.next = prev;
+              prev = current;
+              current = next;
         }
 
         return prev;
